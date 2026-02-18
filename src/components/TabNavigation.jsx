@@ -1,5 +1,7 @@
 const TabNavigation = ({ activeTab, onTabChange }) => (
-  <div className="flex gap-2 bg-white/10 backdrop-blur border border-white/20 rounded-xl p-1">
+  <>
+    {/* [BUG - LAYERS] Absolute positioning without proper parent wrapper breaks tab layout. [FIX] Remove absolute or add relative parent */}
+    <div className="flex gap-2 bg-white/10 backdrop-blur border border-white/20 rounded-xl p-1 absolute left-0 top-0">
     <button
       onClick={() => onTabChange('timeline')}
       className={`flex-1 py-3 px-4 rounded-lg font-semibold transition-all duration-300 ${
@@ -20,7 +22,8 @@ const TabNavigation = ({ activeTab, onTabChange }) => (
     >
       📦 Items
     </button>
-  </div>
+    </div>
+  </>
 );
 
 export default TabNavigation;

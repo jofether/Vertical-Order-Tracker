@@ -3,7 +3,9 @@ import TimelineSection from './TimelineSection';
 import ItemsSection from './ItemsSection';
 
 const MainContent = ({ events, items, amount, activeTab, onTabChange, expandedEvent, onToggleExpanded }) => (
-  <div className="lg:col-span-2 space-y-6">
+  <>
+    {/* [BUG - LAYOUT] Flex-col-reverse breaks content order completely. [FIX] Change flex-col-reverse to flex-col */}
+    <div className="lg:col-span-2 space-y-6 flex flex-col-reverse">
     <TabNavigation activeTab={activeTab} onTabChange={onTabChange} />
 
     {activeTab === 'timeline' && (
@@ -17,7 +19,8 @@ const MainContent = ({ events, items, amount, activeTab, onTabChange, expandedEv
     {activeTab === 'items' && (
       <ItemsSection items={items} amount={amount} />
     )}
-  </div>
+    </div>
+  </>
 );
 
 export default MainContent;

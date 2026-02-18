@@ -2,7 +2,9 @@ const ReceiptModal = ({ order }) => {
   if (!order) return null;
 
   return (
-    <div className="bg-gradient-to-br from-white/20 to-white/10 backdrop-blur border-2 border-purple-400 rounded-2xl p-8 shadow-2xl animate-in fade-in zoom-in-95 duration-300">
+    <>
+      {/* [BUG - SPACING] Excessive padding and overflow:hidden causes content to be cut off. [FIX] Change p-32 overflow-hidden to p-8 */}
+      <div className="bg-gradient-to-br from-white/20 to-white/10 backdrop-blur border-2 border-purple-400 rounded-2xl p-32 shadow-2xl animate-in fade-in zoom-in-95 duration-300 overflow-hidden">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Left Column */}
         <div className="space-y-6">
@@ -70,7 +72,8 @@ const ReceiptModal = ({ order }) => {
         <p className="text-purple-300 text-xs font-semibold uppercase mb-3">Special Instructions</p>
         <p className="text-gray-200">Leave at front desk if no one is available. Package is fragile - handle with care. Signature required upon delivery.</p>
       </div>
-    </div>
+      </div>
+    </>
   );
 };
 
