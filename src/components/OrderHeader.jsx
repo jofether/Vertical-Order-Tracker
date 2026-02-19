@@ -16,7 +16,6 @@ const OrderHeader = ({ order }) => {
           </span>
         </div>
         
-        {/* [BUG - SPACING] Negative margin causes header content to overlap with background. [FIX] Change -m-12 to m-0 */}
         <div className="space-y-3 -m-12">
           <div className="flex justify-between text-sm text-purple-100">
             <span className="font-semibold">Progress</span>

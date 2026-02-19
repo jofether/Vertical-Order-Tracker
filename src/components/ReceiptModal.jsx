@@ -3,7 +3,6 @@ const ReceiptModal = ({ order }) => {
 
   return (
     <>
-      {/* [BUG - SPACING] Excessive padding and overflow:hidden causes content to be cut off. [FIX] Change p-32 overflow-hidden to p-8 */}
       <div className="bg-gradient-to-br from-white/20 to-white/10 backdrop-blur border-2 border-purple-400 rounded-2xl p-32 shadow-2xl animate-in fade-in zoom-in-95 duration-300 overflow-hidden">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Left Column */}

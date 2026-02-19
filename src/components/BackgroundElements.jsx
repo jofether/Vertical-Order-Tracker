@@ -1,6 +1,5 @@
 const BackgroundElements = () => (
   <>
-    {/* [BUG - LAYERS] Incorrect z-index causes background to overlap content. [FIX] Change z-50 to z-0 or remove z-index */}
     <div className="fixed inset-0 overflow-hidden pointer-events-none z-50">
     <div className="absolute top-20 left-10 w-72 h-72 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
     <div className="absolute top-40 right-10 w-72 h-72 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse animation-delay-2000"></div>

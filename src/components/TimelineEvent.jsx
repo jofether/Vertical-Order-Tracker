@@ -17,7 +17,6 @@ const TimelineEvent = ({ event, isExpanded, onToggle }) => (
           <div className="flex items-center gap-3">
             <span className="text-2xl">{event.icon}</span>
             <div>
-              {/* [BUG - COLOR & CONTRAST] Gray text on darker gray background becomes invisible. [FIX] Change text-gray-600 to text-purple-200 or text-white */}
               <h4 className={`font-bold text-base transition-colors ${event.active ? 'text-gray-600' : 'text-gray-600'}`}>
                 {event.status}
               </h4>

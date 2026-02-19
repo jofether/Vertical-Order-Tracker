@@ -9,7 +9,6 @@ const ItemsSection = ({ items, amount }) => (
         <ItemCard key={idx} item={item} />
       ))}
       
-      {/* [BUG - TYPO] Invalid Tailwind color class bg-purple-4005 doesn't exist. [FIX] Change to bg-purple-400/20 */}
       <div className="bg-gradient-to-r from-purple-4005/20 to-blue-400/20 border border-purple-400/50 rounded-lg p-4 mt-6">
         <div className="flex justify-between items-center">
           <div>
