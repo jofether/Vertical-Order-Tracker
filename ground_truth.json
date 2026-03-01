@@ -2,6 +2,7 @@
   "repository": "Vertical Order Tracker",
   "bugs": [
     {
+      "comment": "Bug #1 - z-index",
       "bug_category": "Layers",
       "bug_type": "z-index",
       "file_modified": "src/components/BackgroundElements.jsx",
@@ -12,11 +13,12 @@
       "bounding_box": {
         "x": 0,
         "y": 0,
-        "width": 0,
-        "height": 0
+        "width": 1280,
+        "height": 720
       }
     },
     {
+      "comment": "Bug #2 - color",
       "bug_category": "Typo",
       "bug_type": "color",
       "file_modified": "src/components/ItemsSection.jsx",
@@ -25,13 +27,14 @@
       "buggy_code": "<div className=\"bg-gradient-to-r from-purple-4005/20 to-blue-400/20 border border-purple-400/50 rounded-lg p-4 mt-6\">",
       "css_selector": ".bg-gradient-to-r",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
+        "x": 491,
+        "y": 700,
+        "width": 692,
+        "height": 90
       }
     },
     {
+      "comment": "Bug #3 - flexbox",
       "bug_category": "Layout",
       "bug_type": "flexbox",
       "file_modified": "src/components/MainContent.jsx",
@@ -40,13 +43,14 @@
       "buggy_code": "<div className=\"lg:col-span-2 space-y-6 flex flex-col-reverse\">",
       "css_selector": ".lg:col-span-2",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
+        "x": 459,
+        "y": 246,
+        "width": 757,
+        "height": 576
       }
     },
     {
+      "comment": "Bug #4 - margin",
       "bug_category": "Spacing",
       "bug_type": "margin",
       "file_modified": "src/components/OrderHeader.jsx",
@@ -55,13 +59,14 @@
       "buggy_code": "<div className=\"space-y-3 -m-12\">",
       "css_selector": ".space-y-3",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
+        "x": 48,
+        "y": 431,
+        "width": 205,
+        "height": 80
       }
     },
     {
+      "comment": "Bug #5 - font-size",
       "bug_category": "Typo",
       "bug_type": "font-size",
       "file_modified": "src/components/PageHeader.jsx",
@@ -70,13 +75,14 @@
       "buggy_code": "<h1 className=\"text-51xl md:text-5xl font-bold text-white\">Order Tracker</h1>",
       "css_selector": "h1",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
+        "x": 516,
+        "y": 48,
+        "width": 307,
+        "height": 48
       }
     },
     {
+      "comment": "Bug #6 - text-color",
       "bug_category": "Color",
       "bug_type": "text-color",
       "file_modified": "src/components/ReceiptButton.jsx",
@@ -85,13 +91,14 @@
       "buggy_code": "className=\"inline-flex items-center gap-2 bg-gradient-to-r from-purple-500 via-blue-500 to-pink-500 hover:from-purple-600 hover:via-blue-600 hover:to-pink-600 text-purple-600 font-bold py-4 px-8 rounded-xl shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:scale-110 active:scale-95\"",
       "css_selector": "button",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
+        "x": 69,
+        "y": -1502,
+        "width": 109,
+        "height": 72
       }
     },
     {
+      "comment": "Bug #7 - padding",
       "bug_category": "Spacing",
       "bug_type": "padding",
       "file_modified": "src/components/ReceiptModal.jsx",
@@ -100,13 +107,14 @@
       "buggy_code": "<div className=\"bg-gradient-to-br from-white/20 to-white/10 backdrop-blur border-2 border-purple-400 rounded-2xl p-32 shadow-2xl animate-in fade-in zoom-in-95 duration-300 overflow-hidden\">",
       "css_selector": ".rounded-2xl",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
+        "x": 64,
+        "y": 495,
+        "width": 1152,
+        "height": 1087
       }
     },
     {
+      "comment": "Bug #8 - grid",
       "bug_category": "Layout",
       "bug_type": "grid",
       "file_modified": "src/components/Sidebar.jsx",
@@ -115,13 +123,14 @@
       "buggy_code": "<div className=\"space-y-6 grid grid-cols-2 gap-4\">",
       "css_selector": ".space-y-6",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
+        "x": 64,
+        "y": 359,
+        "width": 363,
+        "height": 1350
       }
     },
     {
+      "comment": "Bug #9 - positioning",
       "bug_category": "Layers",
       "bug_type": "positioning",
       "file_modified": "src/components/TabNavigation.jsx",
@@ -130,13 +139,14 @@
       "buggy_code": "<div className=\"flex gap-2 bg-white/10 backdrop-blur border border-white/20 rounded-xl p-1 absolute left-0 top-0\">",
       "css_selector": ".flex",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
+        "x": 64,
+        "y": 48,
+        "width": 236,
+        "height": 82
       }
     },
     {
+      "comment": "Bug #10 - text-color",
       "bug_category": "Color",
       "bug_type": "text-color",
       "file_modified": "src/components/TimelineEvent.jsx",
@@ -145,10 +155,10 @@
       "buggy_code": "<h4 className={`font-bold text-base transition-colors ${event.active ? 'text-gray-600' : 'text-gray-600'}`}>",
       "css_selector": "h4",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
+        "x": 570,
+        "y": 461,
+        "width": 97,
+        "height": 1099
       }
     }
   ]
