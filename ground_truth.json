@@ -1,5 +1,9 @@
 {
   "repository": "Vertical Order Tracker",
+  "playwright_config": {
+    "viewport_height": 2500,
+    "note": "Extended viewport required to capture the deep-page sidebar grid and receipt buttons."
+  },
   "bugs": [
     {
       "comment": "Bug #1 - z-index",
@@ -9,7 +13,7 @@
       "line_number": 3,
       "clean_code": "<div className=\"fixed inset-0 overflow-hidden pointer-events-none\">",
       "buggy_code": "<div className=\"fixed inset-0 overflow-hidden pointer-events-none z-50\">",
-      "css_selector": ".fixed",
+      "css_selector": ".fixed.inset-0.pointer-events-none",
       "bounding_box": {
         "x": 0,
         "y": 0,
@@ -25,7 +29,7 @@
       "line_number": 12,
       "clean_code": "<div className=\"bg-gradient-to-r from-purple-400/20 to-blue-400/20 border border-purple-400/50 rounded-lg p-4 mt-6\">",
       "buggy_code": "<div className=\"bg-gradient-to-r from-purple-4005/20 to-blue-400/20 border border-purple-400/50 rounded-lg p-4 mt-6\">",
-      "css_selector": ".bg-gradient-to-r",
+      "css_selector": ".bg-gradient-to-r.rounded-lg.border",
       "bounding_box": {
         "x": 491,
         "y": 700,
@@ -41,7 +45,7 @@
       "line_number": 7,
       "clean_code": "<div className=\"lg:col-span-2 space-y-6\">",
       "buggy_code": "<div className=\"lg:col-span-2 space-y-6 flex flex-col-reverse\">",
-      "css_selector": ".lg:col-span-2",
+      "css_selector": ".lg\\:col-span-2.space-y-6",
       "bounding_box": {
         "x": 459,
         "y": 246,
@@ -57,7 +61,7 @@
       "line_number": 19,
       "clean_code": "<div className=\"space-y-3\">",
       "buggy_code": "<div className=\"space-y-3 -m-12\">",
-      "css_selector": ".space-y-3",
+      "css_selector": "div.space-y-3.\\-m-12",
       "bounding_box": {
         "x": 48,
         "y": 431,
@@ -72,13 +76,13 @@
       "file_modified": "src/components/PageHeader.jsx",
       "line_number": 7,
       "clean_code": "<h1 className=\"text-4xl md:text-5xl font-bold text-white\">Order Tracker</h1>",
-      "buggy_code": "<h1 className=\"text-51xl md:text-5xl font-bold text-white\">Order Tracker</h1>",
-      "css_selector": "h1",
+      "buggy_code": "<h1 style={{ fontSize: '500px' }} className=\"md:text-5xl font-bold text-white\">Order Tracker</h1>",
+      "css_selector": "h1.font-bold.text-white",
       "bounding_box": {
-        "x": 516,
-        "y": 48,
-        "width": 307,
-        "height": 48
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 800
       }
     },
     {
@@ -89,10 +93,10 @@
       "line_number": 5,
       "clean_code": "className=\"inline-flex items-center gap-2 bg-gradient-to-r from-purple-500 via-blue-500 to-pink-500 hover:from-purple-600 hover:via-blue-600 hover:to-pink-600 text-white font-bold py-4 px-8 rounded-xl shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:scale-110 active:scale-95\"",
       "buggy_code": "className=\"inline-flex items-center gap-2 bg-gradient-to-r from-purple-500 via-blue-500 to-pink-500 hover:from-purple-600 hover:via-blue-600 hover:to-pink-600 text-purple-600 font-bold py-4 px-8 rounded-xl shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:scale-110 active:scale-95\"",
-      "css_selector": "button",
+      "css_selector": "button.inline-flex.bg-gradient-to-r.rounded-xl",
       "bounding_box": {
         "x": 69,
-        "y": -1502,
+        "y": 1502,
         "width": 109,
         "height": 72
       }
@@ -105,7 +109,7 @@
       "line_number": 6,
       "clean_code": "<div className=\"bg-gradient-to-br from-white/20 to-white/10 backdrop-blur border-2 border-purple-400 rounded-2xl p-8 shadow-2xl animate-in fade-in zoom-in-95 duration-300\">",
       "buggy_code": "<div className=\"bg-gradient-to-br from-white/20 to-white/10 backdrop-blur border-2 border-purple-400 rounded-2xl p-32 shadow-2xl animate-in fade-in zoom-in-95 duration-300 overflow-hidden\">",
-      "css_selector": ".rounded-2xl",
+      "css_selector": ".bg-gradient-to-br.rounded-2xl.border-purple-400",
       "bounding_box": {
         "x": 64,
         "y": 495,
@@ -121,7 +125,7 @@
       "line_number": 7,
       "clean_code": "<div className=\"space-y-6\">",
       "buggy_code": "<div className=\"space-y-6 grid grid-cols-2 gap-4\">",
-      "css_selector": ".space-y-6",
+      "css_selector": "div.space-y-6.grid.grid-cols-2",
       "bounding_box": {
         "x": 64,
         "y": 359,
@@ -137,12 +141,12 @@
       "line_number": 3,
       "clean_code": "<div className=\"flex gap-2 bg-white/10 backdrop-blur border border-white/20 rounded-xl p-1\">",
       "buggy_code": "<div className=\"flex gap-2 bg-white/10 backdrop-blur border border-white/20 rounded-xl p-1 absolute left-0 top-0\">",
-      "css_selector": ".flex",
+      "css_selector": ".flex.gap-2.rounded-xl.backdrop-blur",
       "bounding_box": {
-        "x": 64,
-        "y": 48,
-        "width": 236,
-        "height": 82
+        "x": 0,
+        "y": 0,
+        "width": 800,
+        "height": 200
       }
     },
     {
@@ -153,12 +157,12 @@
       "line_number": 20,
       "clean_code": "<h4 className={`font-bold text-base transition-colors ${event.active ? 'text-green-400' : 'text-purple-200'}`}>",
       "buggy_code": "<h4 className={`font-bold text-base transition-colors ${event.active ? 'text-gray-600' : 'text-gray-600'}`}>",
-      "css_selector": "h4",
+      "css_selector": "div.relative h4.font-bold.text-base",
       "bounding_box": {
         "x": 570,
         "y": 461,
         "width": 97,
-        "height": 1099
+        "height": 400
       }
     }
   ]
