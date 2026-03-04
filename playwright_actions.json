@@ -1,0 +1,12 @@
+{
+  "actions": [
+    {
+      "name": "bug-2-OpenItemsTab",
+      "selector": "button:has-text('Items')"
+    },
+    {
+      "name": "bug-7-OpenReceiptModal",
+      "selector": "button:has-text('Full Receipt')"
+    }
+  ]
+}
